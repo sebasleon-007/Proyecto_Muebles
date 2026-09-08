@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section id="login">
+            <h2>Inicio de sesión</h2>
+            <form onsubmit="return validarLogin(event)">
+                <label for="nombre-usuario">Nombre de usuario</label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" autocomplete="username" placeholder="Ingresa tu nombre de usuario">
+                <p id="error-usuario" class="error-msg"></p>
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" autocomplete="current-password" placeholder="Ingresa tu contraseña">
+                <p id="error-contrasena" class="error-msg"></p>
+
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <p>
+                ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
+            </p>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+    <script src="metodos/sripts.js"></script>
+</html>

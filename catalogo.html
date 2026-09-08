@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <section id="catalogo">
+            <h2>Nuestros productos</h2>
+            <div class="productos">
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300" alt="Cama de madera">
+                    <h3>Cama de madera</h3>
+                    <p>Precio: $150.000</p>
+                    <button onclick="agregarAlCarrito('Cama de madera', 150000, 'MUE-001')">Agregar al carrito</button>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300" alt="Sofá">
+                    <h3>Sofá tres cuerpos</h3>
+                    <p>Precio: $250.000</p>
+                    <button onclick="agregarAlCarrito('Sofá tres cuerpos', 250000, 'MUE-002')">Agregar al carrito</button>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=300" alt="Escritorio">
+                    <h3>Escritorio de oficina</h3>
+                    <p>Precio: $120.000</p>
+                    <button onclick="agregarAlCarrito('Escritorio de oficina', 120000, 'MUE-003')">Agregar al carrito</button>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300" alt="Silla de comedor">
+                    <h3>Silla de comedor</h3>
+                    <p>Precio: $45.000</p>
+                    <button onclick="agregarAlCarrito('Silla de comedor', 45000, 'MUE-004')">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+    <script src="metodos/sripts.js"></script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <section id="contacto">
+            <h1>Contáctanos con:</h1>
+
+            <h3>Correo: correo@muebles.com</h3>
+            <h3>Teléfono: +56 9 1234 5678</h3>
+            <h3>Dirección: Av. Principal 123, Santiago, Chile</h3>
+            <h3>Horario de atención: Lunes a Viernes, 9:00 AM - 8:00 PM</h3>
+
+            <h2>O escríbenos un mensaje</h2>
+            <form onsubmit="return validarContacto(event)">
+                <label for="nombre-contacto">Nombre</label>
+                <input type="text" id="nombre-contacto" name="nombre-contacto" autocomplete="name" placeholder="Ingresa tu nombre">
+                <p id="error-nombre" class="error-msg"></p>
+
+                <label for="correo-contacto">Correo electrónico</label>
+                <input type="email" id="correo-contacto" name="correo-contacto" autocomplete="email" placeholder="ejemplo@correo.com">
+                <p id="error-correo" class="error-msg"></p>
+
+                <label for="mensaje-contacto">Mensaje</label>
+                <textarea id="mensaje-contacto" name="mensaje-contacto" placeholder="Escribe tu mensaje aquí" rows="5"></textarea>
+                <p id="error-mensaje" class="error-msg"></p>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+    <script src="metodos/sripts.js"></script>
+</html>

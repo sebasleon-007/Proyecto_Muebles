@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section id="register">
+            <h2>Registro de usuario</h2>
+            <form onsubmit="return validarRegistro(event)">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Ingresa tu nombre">
+                <p id="error-nombre" class="error-msg"></p>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" placeholder="ejemplo@correo.com">
+                <p id="error-correo" class="error-msg"></p>
+
+                <label for="nombre-usuario">Nombre de usuario</label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" autocomplete="username" placeholder="Elige un nombre de usuario">
+                <p id="error-usuario" class="error-msg"></p>
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" autocomplete="new-password" placeholder="Mínimo 8 caracteres">
+                <p id="error-contrasena" class="error-msg"></p>
+
+                <label for="confirmar-contrasena">Confirmar contraseña</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" autocomplete="new-password" placeholder="Repite tu contraseña">
+                <p id="error-confirmar" class="error-msg"></p>
+
+                <button type="submit">Registrar</button>
+            </form>
+            <p>
+                ¿Ya tienes cuenta? <a href="InicioSesion.html">Inicia sesión</a>
+            </p>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+    <script src="metodos/sripts.js"></script>
+</html>
